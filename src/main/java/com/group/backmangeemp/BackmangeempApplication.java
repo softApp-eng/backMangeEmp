@@ -27,6 +27,7 @@ public class BackmangeempApplication implements CommandLineRunner {
         SpringApplication.run(BackmangeempApplication.class, args);
         // System.out.println("hello");
     }
+<<<<<<< HEAD
     @Bean
     public FilterRegistrationBean<CorsFilter> corsFilter() {
         FilterRegistrationBean<CorsFilter> registrationBean = new FilterRegistrationBean<>();
@@ -77,4 +78,47 @@ public class BackmangeempApplication implements CommandLineRunner {
 //                "https://unsplash.com/photos/m_8o12KdLfg",
 //                new Random(12).toString()));
     }
+=======
+
+    @Override
+    public void run(String... args) throws Exception {
+       empService.addEmp(new Employee(null,
+               "test 1",
+               "test1@gmail.com",
+               "job1",
+               "06111111111",
+               "https://unsplash.com/photos/m_8o12KdLfg",
+               new Random(12).toString()));
+        empService.addEmp(new Employee(null,
+                "test 1",
+                "test1@gmail.com",
+                "job1",
+                "06111111111",
+                "https://unsplash.com/photos/m_8o12KdLfg",
+                new Random(12).toString()));
+        empService.addEmp(new Employee(null,
+                "test 1",
+                "test1@gmail.com",
+                "job1",
+                "06111111111",
+                "https://unsplash.com/photos/m_8o12KdLfg",
+                new Random(12).toString()));
+        empService.addEmp(new Employee(null,
+                "test 1",
+                "test1@gmail.com",
+                "job1",
+                "06111111111",
+                "https://unsplash.com/photos/m_8o12KdLfg",
+                new Random(12).toString()));
+        empService.addEmp(new Employee(null,
+                "test 1",
+                "test1@gmail.com",
+                "job1",
+                "06111111111",
+                "https://unsplash.com/photos/m_8o12KdLfg",
+                new Random(12).toString()));
+    }
+
+
+>>>>>>> 0ad928c (2)
 }
